@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amazon Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="top-nav">
+      <img src="images/amazon_logo.png" alt="Amazon Logo" class="logo">
+      <div class="location">
+        <span class="location-icon"> 
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#fff" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </span>
+        <span>Delivering to Chennai 600001</span>
+        <a href="#">Update location</a>
+      </div>
+      <div class="search-bar">
+        <span class="all-icon">
+          <img src="images/all_icon.png" alt="All" class="all-icon-img">
+        </span>
+        <select>
+          <option>All Categories</option>
+          <option>Alexa Skills</option>
+          <option>Amazon Devices</option>
+          <option>Amazon Fashion</option>
+          <option>Amazon Fresh</option>
+          <option>Amazon Fresh Meat</option>
+          <option>Amazon Pharmacy</option>
+          <option>Appliances</option>
+          <option>Apps & Games</option>
+          <option>Audible Audiobooks</option>
+          <option>Baby</option>
+          <option>Beauty</option>
+          <option>Books</option>
+          <option>Car & Motorbike</option>
+          <option>Clothing & Accessories</option>
+          <option>Collectibles</option>
+          <option>Computers & Accessories</option>
+          <option>Deals</option>
+          <option>Electronics</option>
+          <option>Furniture</option>
+        </select>
+        <input type="text" placeholder="Search Amazon.in">
+        <button>🔍</button>
+      </div>
+      <div class="nav-links">
+        <span class="flag-en">
+          <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" alt="IN" class="flag-icon"> EN
+        </span>
+        <a href="login.html">Hello, sign in<br><span>Account & Lists</span></a>
+        <a href="#">Returns<br><span>& Orders</span></a>
+        <a href="cart.html">🛒 Cart</a>
+      </div>
+    </div>
+    <nav class="main-menu">
+      <a href="#">All</a>
+      <a href="#">Fresh</a>
+      <a href="#">Bestsellers</a>
+      <a href="#">Mobiles</a>
+      <a href="#">Today's Deals</a>
+      <a href="#">Prime</a>
+      <a href="#">Customer Service</a>
+      <a href="#">Fashion</a>
+      <a href="#">Electronics</a>
+      <a href="#">Home & Kitchen</a>
+      <a href="#">Books</a>
+    </nav>
+  </header>
+  <main>
+    <section class="banner-section">
+      <button class="banner-arrow left" onclick="prevBanner()">&#8592;</button>
+      <div class="banner-slider">
+        <img src="images/banner1.jpg" class="banner-img" style="display:block;">
+        <img src="images/banner2.jpg" class="banner-img" style="display:none;">
+        <img src="images/banner3.jpg" class="banner-img" style="display:none;">
+      </div>
+      <button class="banner-arrow right" onclick="nextBanner()">&#8594;</button>
+    </section>
+    <section class="cards-section">
+      <div class="card">
+        <h3>Appliances for your home | Up to 55% off</h3>
+        <div class="card-grid">
+          <div><img src="images/air_conditioner.jpg"><span>Air conditioners</span></div>
+          <div><img src="images/refrigerator.jpg"><span>Refrigerators</span></div>
+          <div><img src="images/microwave.jpg"><span>Microwaves</span></div>
+          <div><img src="images/washing_machine.jpg"><span>Washing machines</span></div>
+        </div>
+        <a href="#" class="see-more">See more</a>
+      </div>
+      <div class="card">
+        <h3>400+ New Launches | Prime Day | 12 - 14 July</h3>
+        <img src="images/prime_day.jpg" style="width:100%">
+        <a href="#" class="see-more">See all offers</a>
+      </div>
+      <div class="card">
+        <h3>Revamp your home in style</h3>
+        <div class="card-grid">
+          <div><img src="images/cushion.jpg"><span>Cushion covers, bedsheets & more</span></div>
+          <div><img src="images/figurines.jpg"><span>Figurines, vases & more</span></div>
+          <div><img src="images/home_storage.jpg"><span>Home storage</span></div>
+          <div><img src="images/lighting.jpg"><span>Lighting solutions</span></div>
+        </div>
+        <a href="#" class="see-more">Explore all</a>
+      </div>
+      <div class="card">
+        <h3>Under ₹499 | Deals on home improvement essentials</h3>
+        <div class="card-grid">
+          <div><img src="images/cleaning.jpg"><span>Under ₹199 | Cleaning supplies</span></div>
+          <div><img src="images/bathroom.jpg"><span>Under ₹399 | Bathroom accessories</span></div>
+          <div><img src="images/home_tools.jpg"><span>Under ₹499 | Home tools</span></div>
+          <div><img src="images/wallpapers.jpg"><span>Under ₹299 | Wallpapers</span></div>
+        </div>
+        <a href="#" class="see-more">Explore all</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-signin">
+      <h2>See personalized recommendations</h2>
+      <button class="footer-signin-btn">Sign in</button>
+      <div class="footer-signin-link">New customer? <a href="#">Start here.</a></div>
+    </div>
+    <div class="footer-backtotop">Back to top</div>
+    <div class="footer-main">
+      <div class="footer-col">
+        <h4>Get to Know Us</h4>
+        <a href="#">About Amazon</a>
+        <a href="#">Careers</a>
+        <a href="#">Press Releases</a>
+        <a href="#">Amazon Science</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect with Us</h4>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </div>
+      <div class="footer-col">
+        <h4>Make Money with Us</h4>
+        <a href="#">Sell on Amazon</a>
+        <a href="#">Sell under Amazon Accelerator</a>
+        <a href="#">Protect and Build Your Brand</a>
+        <a href="#">Amazon Global Selling</a>
+        <a href="#">Supply to Amazon</a>
+        <a href="#">Become an Affiliate</a>
+        <a href="#">Fulfilment by Amazon</a>
+        <a href="#">Advertise Your Products</a>
+        <a href="#">Amazon Pay on Merchants</a>
+      </div>
+      <div class="footer-col">
+        <h4>Let Us Help You</h4>
+        <a href="#">Your Account</a>
+        <a href="#">Returns Centre</a>
+        <a href="#">Recalls and Product Safety Alerts</a>
+        <a href="#">100% Purchase Protection</a>
+        <a href="#">Amazon App Download</a>
+        <a href="#">Help</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <img src="images/amazon_logo.png" alt="Amazon Logo" class="footer-logo">
+      <div class="footer-lang-country">
+        <button class="footer-lang"><span class="footer-globe">🌐</span> English</button>
+        <button class="footer-country"><img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" class="footer-flag"> India</button>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

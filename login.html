@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="navbar">
+    <h1>Login</h1>
+    <a href="index.html">🏠 Home</a>
+  </div>
+  <main style="text-align: center; padding: 2rem;">
+    <h2>Sign In</h2>
+    <input type="text" id="username" placeholder="Username" /><br><br>
+    <input type="password" id="password" placeholder="Password" /><br><br>
+    <button onclick="login()">Login</button>
+    <p id="login-status"></p>
+  </main>
+  <script>
+    function login() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+      if (username === "admin" && password === "1234") {
+        document.getElementById("login-status").innerText = "Login successful!";
+      } else {
+        document.getElementById("login-status").innerText = "Invalid credentials!";
+      }
+    }
+  </script>
+</body>
+</html>
